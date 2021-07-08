@@ -8,8 +8,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/teal_200"
-        android:itemBackground="@color/white"
-        android:itemIconTint="@color/white"
-        android:menu="@menu/navigation"/>
+        android:background="@color/green"
+        android:itemBackground="@color/black"
+        tools:itemIconTint="@color/black"
+        tools:menu="@menu/navigation"
+        tools:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_toRightOf="parent"/>
 </FrameLayout>

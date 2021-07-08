@@ -20,7 +20,7 @@
             app:srcCompat="@color/design_default_color_error" />
 
         <TextView
-            android:id="@+id/tv_finance"
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -32,7 +32,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tv_price"
             android:layout_width="95dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
