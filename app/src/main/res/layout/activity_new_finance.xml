@@ -60,21 +60,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxt_price" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView3"
+    <fragment
+        android:id="@+id/fg_bottonNavNew"
         android:name="com.example.financeapp_pdm.BottonNavFragment"
         android:layout_width="0dp"
         android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <include
-        layout="@layout/fragment_botton_nav"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

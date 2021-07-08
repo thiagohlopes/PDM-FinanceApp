@@ -1,6 +1,7 @@
 package com.example.financeapp_pdm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
         this.rv_finance.setHasFixedSize(true);
         this.financeAdapter = new FinanceAdapter(finances, this);
         this.rv_finance.setAdapter(this.financeAdapter);
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.fg_bottonNavMain, new BottonNavFragment());
+        ft.commit();
 
     }
 }
